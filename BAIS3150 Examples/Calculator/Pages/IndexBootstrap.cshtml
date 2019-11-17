@@ -1,0 +1,29 @@
+﻿@page
+@model Calculator.Pages.IndexBootstrapModel
+@{
+    ViewData["Title"] = "IndexBootstrap";
+}
+
+<form method="post">
+    <h2>IndexBootstrap</h2>
+    <br />
+    <div class="container-fluid">
+        <div class="panel panel-success">
+            <div class="panel-heading">Simple Calculator</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4">Number 1: <input name="First" /></div>
+                    <div class="col-sm-4">Number 2: <input name="Second" /></div>
+                    <div class="col-sm-4"><button class="btn btn-success">Add</button></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="alert alert-success">Result: @Model.calcResult</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+

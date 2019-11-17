@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <table border="1">
+        <tr>
+            <th colspan="3"> Simple Calculator Example</th>
+        </tr>
+        <tr>
+            <td>
+                First:
+                <input asp-for="First" />
+            </td>
+            <td>
+                Second:
+                <input asp-for="Second" />
+            </td>
+            <td>
+                <button>Add</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Result: @Model.calcResult
+            </td>
+        </tr>
+    </table>
+</form>
